@@ -174,7 +174,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {t.brands.items.map((brand, index) => {
               // 根据品牌名称确定图片路径
-              const brandImageMap = {
+              const brandImageMap: { [key: string]: string } = {
                 "Miniso": "/images/brands/miniso.jpg",
                 "Focallure Beauty": "/images/brands/focallure.jpg",
                 "Supermarkets": "/images/brands/supermarket.jpg",
