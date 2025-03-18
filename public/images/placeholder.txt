@@ -1,0 +1,16 @@
+这个目录需要包含以下占位图片：
+
+placeholder-hero.jpg - 首页英雄图
+placeholder-miniso-hero.jpg - Miniso品牌页英雄图
+placeholder-focallure-hero.jpg - Focallure品牌页英雄图 
+placeholder-supermarket-hero.jpg - 超市品牌页英雄图
+placeholder-creamnest-hero.jpg - Creamnest品牌页英雄图
+placeholder-about-hero.jpg - 关于我们页英雄图
+placeholder-founders.jpg - 创始人照片
+placeholder-timeline.jpg - 时间线照片
+placeholder-miniso.jpg - Miniso品牌缩略图
+placeholder-focallure.jpg - Focallure品牌缩略图
+placeholder-supermarket.jpg - 超市品牌缩略图
+placeholder-creamnest.jpg - Creamnest品牌缩略图
+
+请将这些占位图片替换为实际的高质量图片，以获得最佳的网站体验效果。 
