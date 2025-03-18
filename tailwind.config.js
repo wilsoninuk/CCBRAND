@@ -8,9 +8,14 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        // 可以在这里添加自定义颜色
+        primary: '#1A365D',
+        secondary: '#D4AF37',
       },
     },
   },
   plugins: [],
+  future: {
+    removeDeprecatedGapUtilities: true,
+    purgeLayersByDefault: true,
+  },
 } 
