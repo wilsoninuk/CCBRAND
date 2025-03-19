@@ -2,6 +2,7 @@
 
 import * as React from 'react';
 import { useState } from 'react';
+import Image from 'next/image';
 
 // 创建双语内容
 const content = {
@@ -182,13 +183,17 @@ export default function Home() {
                 <div 
                   key={index}
                   className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 h-64"
-                  style={{
-                    backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('${imagePath}')`,
-                    backgroundSize: 'cover',
-                    backgroundPosition: 'center'
-                  }}
                 >
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-black/30"></div>
+                  <div className="relative w-full h-full">
+                    <Image
+                      src={imagePath}
+                      alt={brand.title}
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 400px"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-black/30"></div>
+                  </div>
                   <div className="absolute inset-0 z-10 flex flex-col justify-end p-6 text-white">
                     <h3 className="text-2xl font-bold mb-2">{brand.title}</h3>
                     <p className="text-sm text-gray-300 mb-4 opacity-90">{brand.description}</p>

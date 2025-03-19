@@ -34,11 +34,6 @@ const storeImages = [
     caption: 'Focallure Beauty Store - Paro',
   },
   {
-    src: FOCALLURE_STORE2,
-    alt: 'Focallure Beauty Store in Phuentsholing',
-    caption: 'Focallure Beauty Store - Phuentsholing',
-  },
-  {
     src: FOCALLURE_PRODUCT1,
     alt: 'Focallure Makeup Products',
     caption: 'Premium Makeup Collection',
@@ -65,19 +60,19 @@ const storeLocations = [
     city: 'Thimphu',
     address: 'Norzin Lam, Premium Shopping District',
     hours: '10:00 AM - 7:00 PM',
-    phone: '+975 1234 5690',
+    phone: '+975 17454705',
   },
   {
     city: 'Paro',
     address: 'Main Market Area, Near Clock Tower',
     hours: '10:00 AM - 7:00 PM',
-    phone: '+975 1234 5691',
+    phone: '+975 77889234',
   },
   {
     city: 'Phuentsholing',
     address: 'Central Business District',
     hours: '10:00 AM - 7:00 PM',
-    phone: '+975 1234 5692',
+    phone: '+975 17665432',
   },
 ];
 
@@ -198,7 +193,7 @@ export default function FocallurePage() {
           <div className="h-1 w-24 bg-[#D4AF37] mx-auto mt-4"></div>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {storeLocations.map((store, index) => (
             <div key={index} className="bg-white p-8 rounded-lg shadow-lg">
               <h3 className="text-2xl font-bold text-[#1A365D] mb-2">{store.city}</h3>
