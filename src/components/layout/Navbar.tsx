@@ -41,18 +41,18 @@ export default function Navbar() {
 
   return (
     <motion.header
-      className={`fixed w-full z-50 transition-all duration-500 ${
+      className={`fixed w-full z-[100] transition-all duration-500 ${
         isScrolled 
           ? 'bg-white/95 backdrop-blur-sm shadow-sm py-4' 
-          : 'bg-white py-8 shadow-md'
+          : 'bg-white py-6 shadow-md'
       }`}
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
     >
-      <div className="container mx-auto px-6 flex justify-between items-center">
+      <div className="container mx-auto px-6 flex justify-between items-center relative">
         {/* Logo */}
-        <Link href="/" className="relative z-10 group">
+        <Link href="/" className="relative z-[101] group">
           <div className="flex items-center">
             <h1 className="font-bold text-2xl md:text-4xl text-[#1A365D] transition-all duration-300 tracking-wide">
               CC BHUTAN
@@ -64,7 +64,7 @@ export default function Navbar() {
         </Link>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center space-x-6 lg:space-x-10">
+        <nav className="hidden md:flex items-center space-x-6 lg:space-x-10 relative z-[101]">
           {navLinks.map((link) => (
             <Link 
               key={link.href} 
@@ -97,7 +97,7 @@ export default function Navbar() {
 
         {/* Mobile Menu Button */}
         <button
-          className="md:hidden relative z-10 p-2"
+          className="md:hidden relative z-[101] p-2"
           onClick={toggleMenu}
           aria-label="Toggle menu"
         >
@@ -113,7 +113,7 @@ export default function Navbar() {
       <AnimatePresence>
         {isMenuOpen && (
           <motion.div
-            className="fixed inset-0 bg-white/95 backdrop-blur-sm z-40 flex flex-col items-center justify-center"
+            className="fixed inset-0 bg-white/95 backdrop-blur-sm z-[99] flex flex-col items-center justify-center"
             initial={{ opacity: 0, clipPath: "circle(0% at top right)" }}
             animate={{ opacity: 1, clipPath: "circle(150% at top right)" }}
             exit={{ opacity: 0, clipPath: "circle(0% at top right)" }}
