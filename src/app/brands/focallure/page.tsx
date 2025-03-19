@@ -18,8 +18,8 @@ const FOCALLURE_SKINCARE = '/images/brands/focallure/skincare.webp';
 const FOCALLURE_BEAUTY_TOOLS = '/images/brands/focallure/beauty-tool.jpg';
 
 export const metadata: Metadata = {
-  title: 'Focallure Beauty | CC BHUTAN',
-  description: 'Discover premium imported cosmetics at Focallure Beauty stores in Bhutan. Three exclusive locations offering high-quality beauty products.',
+  title: 'Focallure Beauty | SHAGYAL ENTERPRISES',
+  description: 'Discover Focallure beauty products in Bhutan. Premium makeup and skincare solutions at affordable prices.',
 };
 
 const storeImages = [

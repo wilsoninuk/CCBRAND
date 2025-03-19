@@ -16,8 +16,8 @@ const MINISO_STORE4 = '/images/brands/miniso/store4.jpg';
 const MINISO_STORE5 = '/images/brands/miniso/store5.webp';
 
 export const metadata: Metadata = {
-  title: 'Miniso | CC BHUTAN',
-  description: 'Discover Miniso stores across Bhutan, offering quality lifestyle products at affordable prices. 7 locations serving customers nationwide.',
+  title: 'Miniso | SHAGYAL ENTERPRISES',
+  description: 'As the Master Franchisee for Miniso in Bhutan, SHAGYAL ENTERPRISES has successfully introduced this popular global lifestyle brand to the Bhutanese market.',
 };
 
 const storeImages = [
@@ -113,7 +113,7 @@ export default function MinisoPage() {
           <div>
             <h2 className="text-3xl md:text-4xl font-bold text-[#1A365D] mb-6">About Miniso in Bhutan</h2>
             <p className="text-lg text-gray-700 mb-6">
-              As the Master Franchisee for Miniso in Bhutan, CC BHUTAN has successfully introduced this popular global lifestyle brand to the Bhutanese market, opening 7 stores across the country since 2015.
+              As the Master Franchisee for Miniso in Bhutan, SHAGYAL ENTERPRISES has successfully introduced this popular global lifestyle brand to the Bhutanese market, opening 7 stores across the country since 2015.
             </p>
             <p className="text-lg text-gray-700 mb-6">
               Miniso offers quality home goods, cosmetics, and accessories at affordable prices, bringing international design standards and product quality to Bhutan's retail landscape.

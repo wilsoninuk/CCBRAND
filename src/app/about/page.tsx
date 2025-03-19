@@ -9,8 +9,8 @@ const FOUNDER_IMAGE = '/images/about/founders.jpg';
 const TIMELINE_IMAGE = '/images/about/timeline.jpg';
 
 export const metadata: Metadata = {
-  title: 'About Us | CC BHUTAN',
-  description: 'Learn about the 25-year entrepreneurial journey of CC BHUTAN, from a single store to leading retail and distribution company in Bhutan.',
+  title: 'About Us | SHAGYAL ENTERPRISES',
+  description: 'Learn about the 25-year entrepreneurial journey of SHAGYAL ENTERPRISES, from a single store to leading retail and distribution company in Bhutan.',
 };
 
 export default function AboutPage() {
@@ -26,8 +26,8 @@ export default function AboutPage() {
               <p className="text-base md:text-lg text-gray-700 mb-4">
                 17 years ago, Kencho Wangdi and Tshering Bidha embarked on their entrepreneurial journey with their first store in Bhutan, importing daily necessities and beauty products from Thailand.
               </p>
-              <p className="text-base md:text-lg text-gray-700 mb-4">
-                What began as a modest venture has grown into a robust retail and distribution network spanning the country. Today, our family-owned businesses, led by CC Brand Bhutan, reflect our dedication to quality, innovation, and market expansion.
+              <p className="text-lg text-gray-700 mb-6">
+                Today, our family-owned businesses, led by SHAGYAL ENTERPRISES, reflect our dedication to quality, innovation, and market expansion.
               </p>
               <p className="text-base md:text-lg text-gray-700">
                 Our operations employ over 100 individuals, including a skilled management team of 10, and generate an annual turnover exceeding USD 10 million. We hold three major import licenses in Bhutan, which enable us to efficiently handle logistics and maintain a steady supply of international products.
@@ -57,7 +57,7 @@ export default function AboutPage() {
           <div className="bg-white p-8 rounded-lg shadow-lg">
             <h3 className="text-2xl font-bold text-[#1A365D] mb-4">Kencho Wangdi</h3>
             <p className="text-gray-700 mb-6">
-              Kencho Wangdi, with his visionary leadership and business acumen, has been the driving force behind the expansion of our business operations. His ability to identify market opportunities and forge strategic partnerships has enabled CC BHUTAN to grow from a single store to a diversified retail enterprise.
+              Kencho Wangdi, with his visionary leadership and business acumen, has been the driving force behind the expansion of our business operations. His ability to identify market opportunities and forge strategic partnerships has enabled SHAGYAL ENTERPRISES to grow from a single store to a diversified retail enterprise.
             </p>
             <p className="text-gray-700">
               With expertise in supply chain management and import logistics, Kencho has secured important import licenses that form the backbone of our retail operations, enabling us to bring international brands to the Bhutanese market.
@@ -139,13 +139,27 @@ export default function AboutPage() {
               <div className="md:w-1/2"></div>
               <div className="md:w-1/2 md:pl-12">
                 <div className="bg-white p-6 rounded-lg shadow-lg inline-block">
-                  <h3 className="text-2xl font-bold text-[#1A365D]">2022</h3>
+                  <h3 className="text-2xl font-bold text-[#1A365D]">2021</h3>
                   <h4 className="text-xl font-semibold text-[#1A365D] mb-3">CC Brand Establishment</h4>
                   <p className="text-gray-700">
                     Established CC Brand as our corporate identity, consolidating our various retail operations under one banner.
                   </p>
                 </div>
               </div>
+            </div>
+            
+            {/* Focallure Bhutan */}
+            <div className="flex flex-col md:flex-row items-center">
+              <div className="md:w-1/2 md:pr-12 md:text-right">
+                <div className="bg-white p-6 rounded-lg shadow-lg inline-block">
+                  <h3 className="text-2xl font-bold text-[#1A365D]">2023</h3>
+                  <h4 className="text-xl font-semibold text-[#1A365D] mb-3">Focallure Bhutan</h4>
+                  <p className="text-gray-700">
+                    Established Focallure Bhutan, bringing premium beauty and cosmetics products to the Bhutanese market.
+                  </p>
+                </div>
+              </div>
+              <div className="md:w-1/2"></div>
             </div>
             
             {/* Present */}

@@ -9,8 +9,8 @@ const CREAMNEST_ABOUT = '/images/brands/creamnest/about-creamnest.jpg';
 const CREAMNEST_DISTRIBUTION_MAP = '/images/brands/creamnest/distribution-map.svg';
 
 export const metadata: Metadata = {
-  title: 'Creamnest Milk Tea | CC BHUTAN',
-  description: 'CC BHUTAN is the exclusive distributor of Creamnest Milk Tea Powder in Bhutan, supplying premium milk tea products nationwide.',
+  title: 'Creamnest Milk Tea | SHAGYAL ENTERPRISES',
+  description: 'SHAGYAL ENTERPRISES is the exclusive distributor of Creamnest Milk Tea Powder in Bhutan, supplying premium milk tea products nationwide.',
 };
 
 const productFlavors = [
@@ -43,27 +43,27 @@ const productFlavors = [
 const distributionRegions = [
   {
     region: 'Western Bhutan',
-    cities: ['Thimphu', 'Paro', 'Punakha', 'Haa'],
+    cities: ['Thimphu', 'Paro', 'Wangdue', 'Punakha'],
     coverage: '100+ retail outlets',
-    coordinates: { lng: 25, lat: 45 },
+    coordinates: { lng: 30, lat: 40 },
   },
   {
     region: 'Central Bhutan',
-    cities: ['Wangduephodrang', 'Trongsa', 'Bumthang'],
+    cities: ['Bumthang', 'Trongsa', 'Zhemgang'],
     coverage: '50+ retail outlets',
-    coordinates: { lng: 50, lat: 40 },
+    coordinates: { lng: 50, lat: 45 },
   },
   {
     region: 'Eastern Bhutan',
-    cities: ['Mongar', 'Trashigang', 'Lhuentse'],
+    cities: ['Mongar', 'Trashigang', 'Pemagatshel'],
     coverage: '40+ retail outlets',
-    coordinates: { lng: 75, lat: 45 },
+    coordinates: { lng: 70, lat: 45 },
   },
   {
     region: 'Southern Bhutan',
-    cities: ['Gelephu', 'Phuentsholing', 'Samdrup Jongkhar'],
+    cities: ['Phuentsholing', 'Gelephu', 'Samdrup Jongkhar'],
     coverage: '60+ retail outlets',
-    coordinates: { lng: 50, lat: 75 },
+    coordinates: { lng: 50, lat: 70 },
   },
 ];
 
@@ -137,7 +137,7 @@ export default function CreamnestPage() {
           <div>
             <h2 className="text-3xl md:text-4xl font-bold text-[#1A365D] mb-6">About Creamnest</h2>
             <p className="text-lg text-gray-700 mb-6">
-              Since 2020, CC BHUTAN has been the exclusive distributor of Creamnest Milk Tea Powder in Bhutan. This premium beverage product has quickly gained popularity across the country for its authentic taste and convenient preparation.
+              Since 2020, SHAGYAL ENTERPRISES has been the exclusive distributor of Creamnest Milk Tea Powder in Bhutan. This premium beverage product has quickly gained popularity across the country for its authentic taste and convenient preparation.
             </p>
             <p className="text-lg text-gray-700 mb-6">
               Creamnest offers a range of milk tea powders that deliver the perfect creamy taste with each cup. Available in various flavors, these products are specially formulated to provide an authentic milk tea experience with minimal preparation.
