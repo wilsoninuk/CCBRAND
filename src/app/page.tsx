@@ -20,11 +20,7 @@ const content = {
         },
         {
           title: "Focallure Beauty",
-          description: "2 premium beauty stores with imported cosmetics"
-        },
-        {
-          title: "Supermarkets",
-          description: "3 supermarkets catering to diverse consumer needs"
+          description: "3 premium beauty stores with imported cosmetics"
         },
         {
           title: "Creamnest",
@@ -42,7 +38,7 @@ const content = {
       title: "Our Success in Numbers",
       items: [
         { value: "25+", label: "Years of Experience" },
-        { value: "12", label: "Retail Locations" },
+        { value: "10", label: "Retail Locations" },
         { value: "100+", label: "Employees" },
         { value: "$10M+", label: "Annual Turnover" }
       ]
@@ -68,11 +64,7 @@ const content = {
         },
         {
           title: "ཕོ་ཀལ་ལུར་མཛེས་ཆས།",
-          description: "ཕྱི་ལས་ནང་འདྲེན་འབད་བའི་མཛེས་ཆས་དང་བཅསཔ་སྦེ་གོང་ཚད་མཐོ་བའི་མཛེས་ཆས་ཚོང་ཁང་ ༢"
-        },
-        {
-          title: "ཚོང་ཁང་ཆེན་མོ།",
-          description: "ཉོ་མི་སྣ་ཚོགས་ཀྱི་དགོས་མཁོ་བསྐང་ནིའི་དོན་ལུ་ཚོང་ཁང་ཆེན་མོ་ ༣"
+          description: "ཕྱི་ལས་ནང་འདྲེན་འབད་བའི་མཛེས་ཆས་དང་བཅསཔ་སྦེ་གོང་ཚད་མཐོ་བའི་མཛེས་ཆས་ཚོང་ཁང་ ༣"
         },
         {
           title: "ཀི་རིམ་ནེསཊི།",
@@ -90,7 +82,7 @@ const content = {
       title: "ཨང་གྲངས་ནང་ང་བཅས་ཀྱི་གྲུབ་འབྲས།",
       items: [
         { value: "༢༥+", label: "ཉམས་མྱོང་གི་ལོ་གྲངས།" },
-        { value: "༡༢", label: "ཚོང་ཁང་གི་ས་གནས།" },
+        { value: "༡༠", label: "ཚོང་ཁང་གི་ས་གནས།" },
         { value: "༡༠༠+", label: "ལས་གཡོག་པ།" },
         { value: "$༡༠M+", label: "ལོ་བསྟར་སྒོར་བཞུ།" }
       ]
@@ -126,7 +118,7 @@ export default function Home() {
       </div>
 
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center">
+      <section className="relative min-h-[85vh] flex items-center justify-center">
         {/* 背景图片 */}
         <div 
           className="absolute inset-0 bg-cover bg-center z-0" 
@@ -134,9 +126,10 @@ export default function Home() {
         ></div>
         
         {/* 渐变叠加层以提高文字可读性 */}
-        <div className="absolute inset-0 bg-gradient-to-r from-[#1A365D]/80 to-[#2A4E84]/70 z-10"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-[#1A365D]/40 to-[#1A365D]/60 z-10"></div>
         
-        <div className="container mx-auto px-4 relative z-20 text-center text-white">
+        {/* Content */}
+        <div className="relative z-20 text-center text-white px-4 py-12">
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6">
             {t.hero.title}
           </h1>
@@ -152,7 +145,7 @@ export default function Home() {
             </a>
             <a 
               href="/brands/miniso"
-              className="inline-block ml-4 bg-transparent hover:bg-white/10 text-white border-2 border-white font-bold py-3 px-8 rounded-md transition-colors duration-300"
+              className="inline-block ml-4 bg-white/10 hover:bg-white/20 text-white border-2 border-white/80 font-bold py-3 px-8 rounded-md transition-colors duration-300"
             >
               {language === 'en' ? 'Our Brands' : 'ང་བཅས་ཀྱི་ཚོང་རྟགས་ཚུ།'}
             </a>
@@ -171,18 +164,16 @@ export default function Home() {
             <div className="h-1 w-24 bg-[#D4AF37] mx-auto mt-6"></div>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
             {t.brands.items.map((brand, index) => {
               // 根据品牌名称确定图片路径
               const brandImageMap: { [key: string]: string } = {
-                "Miniso": "/images/brands/miniso.jpg",
-                "Focallure Beauty": "/images/brands/focallure.jpg",
-                "Supermarkets": "/images/brands/supermarket.jpg",
-                "Creamnest": "/images/brands/creamnest.jpg",
-                "མི་ནི་སོ།": "/images/brands/miniso.jpg",
-                "ཕོ་ཀལ་ལུར་མཛེས་ཆས།": "/images/brands/focallure.jpg",
-                "ཚོང་ཁང་ཆེན་མོ།": "/images/brands/supermarket.jpg",
-                "ཀི་རིམ་ནེསཊི།": "/images/brands/creamnest.jpg"
+                "Miniso": "/images/brands/miniso/card.jpg",
+                "Focallure Beauty": "/images/brands/focallure/card.jpg",
+                "Creamnest": "/images/brands/creamnest/card.jpg",
+                "མི་ནི་སོ།": "/images/brands/miniso/card.jpg",
+                "ཕོ་ཀལ་ལུར་མཛེས་ཆས།": "/images/brands/focallure/card.jpg",
+                "ཀི་རིམ་ནེསཊི།": "/images/brands/creamnest/card.jpg"
               };
               
               const imagePath = brandImageMap[brand.title] || "/images/brands/placeholder.jpg";
@@ -192,12 +183,12 @@ export default function Home() {
                   key={index}
                   className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 h-64"
                   style={{
-                    backgroundImage: `url('${imagePath}')`,
+                    backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('${imagePath}')`,
                     backgroundSize: 'cover',
                     backgroundPosition: 'center'
                   }}
                 >
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-black/30"></div>
                   <div className="absolute inset-0 z-10 flex flex-col justify-end p-6 text-white">
                     <h3 className="text-2xl font-bold mb-2">{brand.title}</h3>
                     <p className="text-sm text-gray-300 mb-4 opacity-90">{brand.description}</p>

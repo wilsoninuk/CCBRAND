@@ -12,7 +12,6 @@ const navLinks = [
   { href: '/about', label: 'About Us' },
   { href: '/brands/miniso', label: 'Miniso' },
   { href: '/brands/focallure', label: 'Focallure' },
-  { href: '/brands/supermarket', label: 'Supermarkets' },
   { href: '/brands/creamnest', label: 'Creamnest' },
   { href: '/join-us', label: 'Join Us' },
 ];
@@ -41,9 +40,9 @@ export default function Navbar() {
 
   return (
     <motion.header
-      className={`fixed w-full z-[100] transition-all duration-500 ${
+      className={`fixed w-full z-[9999] transition-all duration-500 ${
         isScrolled 
-          ? 'bg-white/95 backdrop-blur-sm shadow-sm py-4' 
+          ? 'bg-white/95 backdrop-blur-md shadow-sm py-4' 
           : 'bg-white py-6 shadow-md'
       }`}
       initial={{ y: -100 }}
@@ -52,19 +51,19 @@ export default function Navbar() {
     >
       <div className="container mx-auto px-6 flex justify-between items-center relative">
         {/* Logo */}
-        <Link href="/" className="relative z-[101] group">
+        <Link href="/" className="relative z-[9999] group">
           <div className="flex items-center">
-            <h1 className="font-bold text-2xl md:text-4xl text-[#1A365D] transition-all duration-300 tracking-wide">
+            <h1 className="font-bold text-xl md:text-2xl text-[#1A365D] transition-all duration-300 tracking-wide">
               CC BHUTAN
             </h1>
             <motion.div 
-              className="h-[3px] bg-[#D4AF37] w-0 group-hover:w-12 ml-3 transition-all duration-300"
+              className="h-[2px] bg-[#D4AF37] w-0 group-hover:w-8 ml-2 transition-all duration-300"
             />
           </div>
         </Link>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center space-x-6 lg:space-x-10 relative z-[101]">
+        <nav className="hidden md:flex items-center space-x-4 lg:space-x-8 relative z-[9999] ml-auto">
           {navLinks.map((link) => (
             <Link 
               key={link.href} 
@@ -73,7 +72,7 @@ export default function Navbar() {
                 pathname === link.href 
                   ? 'font-semibold text-[#D4AF37]'
                   : 'font-medium text-[#1A365D] hover:text-[#D4AF37]'
-              } transition-colors duration-300 relative py-2 text-lg tracking-wide`}
+              } transition-colors duration-300 relative py-2 text-base tracking-wide whitespace-nowrap`}
             >
               <span>{link.label}</span>
               {pathname === link.href && (
@@ -85,19 +84,11 @@ export default function Navbar() {
               )}
             </Link>
           ))}
-
-          {/* Contact button for desktop */}
-          <Link 
-            href="/contact" 
-            className="ml-2 px-6 py-3 rounded-md transition-all duration-300 text-lg bg-[#1A365D] text-white hover:bg-[#2C5282] border border-[#1A365D]/50"
-          >
-            Contact
-          </Link>
         </nav>
 
         {/* Mobile Menu Button */}
         <button
-          className="md:hidden relative z-[101] p-2"
+          className="md:hidden relative z-[9999] p-2"
           onClick={toggleMenu}
           aria-label="Toggle menu"
         >
@@ -113,7 +104,7 @@ export default function Navbar() {
       <AnimatePresence>
         {isMenuOpen && (
           <motion.div
-            className="fixed inset-0 bg-white/95 backdrop-blur-sm z-[99] flex flex-col items-center justify-center"
+            className="fixed inset-0 bg-white/95 backdrop-blur-md z-[9998] flex flex-col items-center justify-center"
             initial={{ opacity: 0, clipPath: "circle(0% at top right)" }}
             animate={{ opacity: 1, clipPath: "circle(150% at top right)" }}
             exit={{ opacity: 0, clipPath: "circle(0% at top right)" }}
@@ -143,22 +134,6 @@ export default function Navbar() {
                   </Link>
                 </motion.div>
               ))}
-              
-              {/* Contact button for mobile menu */}
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.4, delay: navLinks.length * 0.1 }}
-                className="mt-6"
-              >
-                <Link 
-                  href="/contact" 
-                  className="px-10 py-3 rounded-md bg-[#1A365D] text-xl text-white hover:bg-[#2C5282] transition-colors duration-300"
-                  onClick={toggleMenu}
-                >
-                  Contact
-                </Link>
-              </motion.div>
             </nav>
           </motion.div>
         )}

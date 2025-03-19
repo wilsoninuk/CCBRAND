@@ -5,17 +5,21 @@ import Section from '@/components/ui/Section';
 import ImageGallery from '@/components/ui/ImageGallery';
 
 // Placeholder images - replace with actual images later
-const FOCALLURE_HERO = '/images/placeholder-focallure-hero.jpg';
-const FOCALLURE_STORE1 = '/images/placeholder-focallure-store1.jpg';
-const FOCALLURE_STORE2 = '/images/placeholder-focallure-store2.jpg';
-const FOCALLURE_PRODUCT1 = '/images/placeholder-focallure-product1.jpg';
-const FOCALLURE_PRODUCT2 = '/images/placeholder-focallure-product2.jpg';
-const FOCALLURE_PRODUCT3 = '/images/placeholder-focallure-product3.jpg';
-const FOCALLURE_PRODUCT4 = '/images/placeholder-focallure-product4.jpg';
+const FOCALLURE_HERO = '/images/brands/focallure/hero1.jpg';
+const FOCALLURE_INTRO_IMAGE = '/images/brands/focallure/store-intro.jpg';
+const FOCALLURE_STORE1 = '/images/brands/focallure/store1.jpg';
+const FOCALLURE_STORE2 = '/images/brands/focallure/store2.jpg';
+const FOCALLURE_PRODUCT1 = '/images/brands/focallure/product1.jpg';
+const FOCALLURE_PRODUCT2 = '/images/brands/focallure/product2.jpg';
+const FOCALLURE_PRODUCT3 = '/images/brands/focallure/product3.jpg';
+const FOCALLURE_PRODUCT4 = '/images/brands/focallure/product4.jpg';
+const FOCALLURE_MAKEUP = '/images/brands/focallure/cosmetic.jpg';
+const FOCALLURE_SKINCARE = '/images/brands/focallure/skincare.webp';
+const FOCALLURE_BEAUTY_TOOLS = '/images/brands/focallure/beauty-tool.jpg';
 
 export const metadata: Metadata = {
   title: 'Focallure Beauty | CC BHUTAN',
-  description: 'Discover premium imported cosmetics at Focallure Beauty stores in Bhutan. Two exclusive locations offering high-quality beauty products.',
+  description: 'Discover premium imported cosmetics at Focallure Beauty stores in Bhutan. Three exclusive locations offering high-quality beauty products.',
 };
 
 const storeImages = [
@@ -28,6 +32,11 @@ const storeImages = [
     src: FOCALLURE_STORE2,
     alt: 'Focallure Beauty Store in Paro',
     caption: 'Focallure Beauty Store - Paro',
+  },
+  {
+    src: FOCALLURE_STORE2,
+    alt: 'Focallure Beauty Store in Phuentsholing',
+    caption: 'Focallure Beauty Store - Phuentsholing',
   },
   {
     src: FOCALLURE_PRODUCT1,
@@ -64,23 +73,29 @@ const storeLocations = [
     hours: '10:00 AM - 7:00 PM',
     phone: '+975 1234 5691',
   },
+  {
+    city: 'Phuentsholing',
+    address: 'Central Business District',
+    hours: '10:00 AM - 7:00 PM',
+    phone: '+975 1234 5692',
+  },
 ];
 
 const productCategories = [
   {
     name: 'Makeup',
     description: 'Professional-grade makeup products including foundations, concealers, eyeshadows, lipsticks, and more.',
-    image: FOCALLURE_PRODUCT1,
+    image: FOCALLURE_MAKEUP,
   },
   {
     name: 'Skincare',
     description: 'Advanced skincare solutions featuring cleansers, moisturizers, serums, and masks for all skin types.',
-    image: FOCALLURE_PRODUCT2,
+    image: FOCALLURE_SKINCARE,
   },
   {
     name: 'Beauty Tools',
     description: 'High-quality beauty applicators, brushes, and accessories to achieve professional makeup results.',
-    image: FOCALLURE_PRODUCT3,
+    image: FOCALLURE_BEAUTY_TOOLS,
   },
 ];
 
@@ -91,26 +106,17 @@ export default function FocallurePage() {
         title="Focallure Beauty" 
         subtitle="Premium Beauty Products in Bhutan"
         backgroundImage={FOCALLURE_HERO}
+        alignment="right"
+        textColor="white"
       />
       
       {/* Brand Introduction */}
       <Section backgroundColor="white" paddingY="xl">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div className="order-2 lg:order-1">
-            <div className="relative h-[400px] rounded-lg overflow-hidden shadow-xl">
-              <Image
-                src={FOCALLURE_STORE1}
-                alt="Focallure Beauty Store"
-                fill
-                className="object-cover"
-              />
-            </div>
-          </div>
-          
-          <div className="order-1 lg:order-2">
             <h2 className="text-3xl md:text-4xl font-bold text-[#1A365D] mb-6">About Focallure Beauty</h2>
             <p className="text-lg text-gray-700 mb-6">
-              Focallure Beauty represents our dedication to bringing premium international beauty products to the Bhutanese market. Since 2018, we have operated exclusive beauty stores in Thimphu and Paro.
+              Focallure Beauty represents our dedication to bringing premium international beauty products to the Bhutanese market. Since 2018, we have operated exclusive beauty stores in Thimphu, Paro, and Phuentsholing.
             </p>
             <p className="text-lg text-gray-700 mb-6">
               Our stores feature a carefully curated selection of imported cosmetics and skincare products that meet international quality standards while addressing the unique beauty needs of our local customers.
@@ -118,6 +124,18 @@ export default function FocallurePage() {
             <p className="text-lg text-gray-700">
               With trained beauty consultants available in-store, we offer personalized advice and product recommendations to help our customers find the perfect beauty solutions.
             </p>
+          </div>
+          
+          <div className="order-1 lg:order-2">
+            <div className="relative h-[500px] rounded-lg overflow-hidden shadow-xl">
+              <Image
+                src={FOCALLURE_INTRO_IMAGE}
+                alt="Focallure Beauty Store"
+                fill
+                className="object-cover"
+                sizes="(max-width: 1024px) 100vw, 50vw"
+              />
+            </div>
           </div>
         </div>
       </Section>

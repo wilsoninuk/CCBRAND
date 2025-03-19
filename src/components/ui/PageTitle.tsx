@@ -2,6 +2,7 @@
 
 import * as React from 'react';
 import { motion } from 'framer-motion';
+import OptimizedImage from './OptimizedImage';
 
 type PageTitleProps = {
   title: string;
@@ -50,17 +51,24 @@ export default function PageTitle({
   };
 
   return (
-    <div 
-      className={`relative w-full min-h-[50vh] md:min-h-[60vh] flex items-center justify-center px-4 py-24 overflow-hidden`}
-      style={{
-        backgroundImage: backgroundImage ? `url(${backgroundImage})` : undefined,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-      }}
-    >
+    <div className="relative w-full min-h-[500px] md:min-h-[650px] flex items-center justify-center px-4 py-24 overflow-hidden">
+      {/* Background image */}
+      {backgroundImage && (
+        <div className="absolute inset-0">
+          <OptimizedImage
+            src={backgroundImage}
+            alt={title}
+            width={1920}
+            height={650}
+            priority
+            className="w-full h-full object-contain"
+          />
+        </div>
+      )}
+
       {/* Background overlay with improved gradient */}
       {backgroundImage && overlay && (
-        <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/50 to-black/70 z-0"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-black/20 to-black/30 z-0"></div>
       )}
 
       {!backgroundImage && (
@@ -68,12 +76,14 @@ export default function PageTitle({
       )}
 
       {/* Content with enhanced animations */}
-      <div className={`relative z-10 container mx-auto ${alignmentClasses[alignment]}`}>
+      <div className={`relative z-10 container mx-auto ${alignmentClasses[alignment]} ${
+        alignment === 'right' ? 'pr-4 md:pr-8 lg:pr-16' : ''
+      }`}>
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5 }}
-          className="relative"
+          className={`relative ${alignment === 'right' ? 'max-w-lg ml-auto' : ''}`}
         >
           {/* Decorative element */}
           <motion.div 
@@ -94,9 +104,7 @@ export default function PageTitle({
           
           {subtitle && (
             <motion.p
-              className={`${subtitleSizeClasses[size]} max-w-3xl ${
-                alignment === 'center' ? 'mx-auto' : ''
-              } ${textColorClasses[textColor]} opacity-90 leading-relaxed`}
+              className={`${subtitleSizeClasses[size]} ${textColorClasses[textColor]} opacity-90 leading-relaxed`}
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.4 }}

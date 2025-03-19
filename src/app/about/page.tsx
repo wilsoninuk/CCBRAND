@@ -3,10 +3,10 @@ import Section from '@/components/ui/Section';
 import Image from 'next/image';
 import { Metadata } from 'next';
 
-// Placeholder images - replace with actual images later
-const ABOUT_HERO = '/images/placeholder-about-hero.jpg';
-const FOUNDER_IMAGE = '/images/placeholder-founders.jpg';
-const TIMELINE_IMAGE = '/images/placeholder-timeline.jpg';
+// 使用新的图片
+const ABOUT_HERO = '/images/about/headquarters.jpg';
+const FOUNDER_IMAGE = '/images/about/founders.jpg';
+const TIMELINE_IMAGE = '/images/about/timeline.jpg';
 
 export const metadata: Metadata = {
   title: 'About Us | CC BHUTAN',
@@ -16,42 +16,39 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <>
-      <PageTitle 
-        title="About CC BHUTAN" 
-        subtitle="Our 25-Year Journey of Growth and Excellence"
-        backgroundImage={ABOUT_HERO}
-      />
-      
       {/* Company Overview */}
-      <Section backgroundColor="white" paddingY="xl">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-          <div>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#1A365D] mb-6">Our Entrepreneurial Story</h2>
-            <p className="text-lg text-gray-700 mb-6">
-              25 years ago, Kencho Wangdi and Tshering embarked on their entrepreneurial journey with their first store in Bhutan, importing daily necessities and beauty products from Thailand.
-            </p>
-            <p className="text-lg text-gray-700 mb-6">
-              What began as a modest venture has grown into a robust retail and distribution network spanning the country. Today, our family-owned businesses, led by CC Brand Bhutan, reflect our dedication to quality, innovation, and market expansion.
-            </p>
-            <p className="text-lg text-gray-700">
-              Our operations employ over 100 individuals, including a skilled management team of 10, and generate an annual turnover exceeding USD 10 million. We hold three major import licenses in Bhutan, which enable us to efficiently handle logistics and maintain a steady supply of international products.
-            </p>
-          </div>
-          
-          <div className="relative h-[500px] rounded-lg overflow-hidden shadow-xl">
-            <Image
-              src={FOUNDER_IMAGE}
-              alt="Kencho Wangdi and Tshering"
-              fill
-              className="object-cover"
-            />
+      <Section backgroundColor="white" paddingY="md">
+        <div className="max-w-5xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+            <div className="max-w-xl">
+              <h1 className="text-2xl md:text-3xl font-bold text-[#1A365D] mb-4">Our Entrepreneurial Story</h1>
+              <div className="h-0.5 w-20 bg-[#D4AF37] mb-6"></div>
+              <p className="text-base md:text-lg text-gray-700 mb-4">
+                25 years ago, Kencho Wangdi and Tshering Bidha embarked on their entrepreneurial journey with their first store in Bhutan, importing daily necessities and beauty products from Thailand.
+              </p>
+              <p className="text-base md:text-lg text-gray-700 mb-4">
+                What began as a modest venture has grown into a robust retail and distribution network spanning the country. Today, our family-owned businesses, led by CC Brand Bhutan, reflect our dedication to quality, innovation, and market expansion.
+              </p>
+              <p className="text-base md:text-lg text-gray-700">
+                Our operations employ over 100 individuals, including a skilled management team of 10, and generate an annual turnover exceeding USD 10 million. We hold three major import licenses in Bhutan, which enable us to efficiently handle logistics and maintain a steady supply of international products.
+              </p>
+            </div>
+            
+            <div className="relative h-[500px] rounded-lg overflow-hidden shadow-xl">
+              <Image
+                src={FOUNDER_IMAGE}
+                alt="Kencho Wangdi and Tshering Bidha"
+                fill
+                className="object-cover"
+              />
+            </div>
           </div>
         </div>
       </Section>
       
       {/* Founders Section */}
-      <Section backgroundColor="light" paddingY="xl">
-        <div className="text-center mb-12">
+      <Section backgroundColor="light" paddingY="md">
+        <div className="text-center mb-8">
           <h2 className="text-3xl md:text-4xl font-bold text-[#1A365D] mb-4">Our Founders</h2>
           <div className="h-1 w-24 bg-[#D4AF37] mx-auto"></div>
         </div>
@@ -68,9 +65,9 @@ export default function AboutPage() {
           </div>
           
           <div className="bg-white p-8 rounded-lg shadow-lg">
-            <h3 className="text-2xl font-bold text-[#1A365D] mb-4">Tshering</h3>
+            <h3 className="text-2xl font-bold text-[#1A365D] mb-4">Tshering Bidha</h3>
             <p className="text-gray-700 mb-6">
-              Tshering brings her exceptional customer insight and operational expertise to the business. Her deep understanding of consumer preferences and retail management has been crucial in creating exceptional shopping experiences across all our retail outlets.
+              Tshering Bidha brings her exceptional customer insight and operational expertise to the business. Her deep understanding of consumer preferences and retail management has been crucial in creating exceptional shopping experiences across all our retail outlets.
             </p>
             <p className="text-gray-700">
               Her focus on quality assurance and team development has established a strong organizational culture centered on customer satisfaction and operational excellence, making our stores the preferred shopping destinations in Bhutan.
@@ -173,7 +170,7 @@ export default function AboutPage() {
                   <h3 className="text-2xl font-bold text-white">Today</h3>
                   <h4 className="text-xl font-semibold text-white mb-3">CC BHUTAN</h4>
                   <p className="text-white">
-                    Operating 7 Miniso stores, 2 Focallure beauty stores, 3 supermarkets, and a nationwide distribution network for Creamnest products.
+                    Operating 7 Miniso stores, 3 Focallure beauty stores, and a nationwide distribution network for Creamnest products.
                   </p>
                 </div>
               </div>

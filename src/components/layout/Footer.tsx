@@ -1,6 +1,6 @@
 import * as React from 'react';
 import Link from 'next/link';
-import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaInstagram, FaFacebook, FaLinkedin } from 'react-icons/fa';
+import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaInstagram, FaFacebook } from 'react-icons/fa';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -26,11 +26,8 @@ export default function Footer() {
               <a href="https://instagram.com" className="text-gray-300 hover:text-[#D4AF37] transition-colors duration-300" aria-label="Instagram">
                 <FaInstagram size={22} />
               </a>
-              <a href="https://facebook.com" className="text-gray-300 hover:text-[#D4AF37] transition-colors duration-300" aria-label="Facebook">
+              <a href="https://www.facebook.com/minisobhutanofficial/" className="text-gray-300 hover:text-[#D4AF37] transition-colors duration-300" aria-label="Facebook">
                 <FaFacebook size={22} />
-              </a>
-              <a href="https://linkedin.com" className="text-gray-300 hover:text-[#D4AF37] transition-colors duration-300" aria-label="LinkedIn">
-                <FaLinkedin size={22} />
               </a>
             </div>
           </div>
@@ -48,13 +45,7 @@ export default function Footer() {
               <li>
                 <Link href="/brands/focallure" className="text-gray-300 hover:text-white transition-colors flex items-center group">
                   <span className="w-0 h-0.5 bg-[#D4AF37] mr-0 group-hover:w-4 group-hover:mr-2 transition-all duration-300"></span>
-                  Focallure Beauty (2 Stores)
-                </Link>
-              </li>
-              <li>
-                <Link href="/brands/supermarket" className="text-gray-300 hover:text-white transition-colors flex items-center group">
-                  <span className="w-0 h-0.5 bg-[#D4AF37] mr-0 group-hover:w-4 group-hover:mr-2 transition-all duration-300"></span>
-                  Supermarkets (3 Locations)
+                  Focallure Beauty (3 Stores)
                 </Link>
               </li>
               <li>
@@ -104,11 +95,11 @@ export default function Footer() {
               </li>
               <li className="flex items-center">
                 <FaPhoneAlt className="mr-3 text-[#D4AF37]" />
-                <span>+975 123 456 789</span>
+                <span>+975 77454705</span>
               </li>
               <li className="flex items-center">
                 <FaEnvelope className="mr-3 text-[#D4AF37]" />
-                <span>info@ccbhutan.bt</span>
+                <span>shagyal2k@gmail.com</span>
               </li>
             </ul>
           </div>

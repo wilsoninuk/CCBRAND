@@ -4,14 +4,16 @@ import PageTitle from '@/components/ui/PageTitle';
 import Section from '@/components/ui/Section';
 import ImageGallery from '@/components/ui/ImageGallery';
 
-// Placeholder images - replace with actual images later
-const MINISO_HERO = '/images/placeholder-miniso-hero.jpg';
-const MINISO_STORE1 = '/images/placeholder-miniso-store1.jpg';
-const MINISO_STORE2 = '/images/placeholder-miniso-store2.jpg';
-const MINISO_STORE3 = '/images/placeholder-miniso-store3.jpg';
-const MINISO_STORE4 = '/images/placeholder-miniso-store4.jpg';
-const MINISO_PRODUCT1 = '/images/placeholder-miniso-product1.jpg';
-const MINISO_PRODUCT2 = '/images/placeholder-miniso-product2.jpg';
+// 使用实际的图片路径
+const MINISO_HERO = '/images/brands/miniso/hero.jpg';
+const MINISO_PRODUCT1 = '/images/brands/miniso/product1.jpg';
+const MINISO_PRODUCT2 = '/images/brands/miniso/product2.webp';
+const MINISO_PRODUCT3 = '/images/brands/miniso/product3.jpg';
+const MINISO_PRODUCT4 = '/images/brands/miniso/product4.JPG';
+const MINISO_STORE2 = '/images/brands/miniso/store2.JPG';
+const MINISO_STORE3 = '/images/brands/miniso/store3.jpg';
+const MINISO_STORE4 = '/images/brands/miniso/store4.jpg';
+const MINISO_STORE5 = '/images/brands/miniso/store5.webp';
 
 export const metadata: Metadata = {
   title: 'Miniso | CC BHUTAN',
@@ -20,79 +22,79 @@ export const metadata: Metadata = {
 
 const storeImages = [
   {
-    src: MINISO_STORE1,
-    alt: 'Miniso Store in Thimphu',
-    caption: 'Miniso Flagship Store - Thimphu',
-  },
-  {
     src: MINISO_STORE2,
-    alt: 'Miniso Store in Paro',
-    caption: 'Miniso Store - Paro',
+    alt: 'MINISO Paro Store Front',
+    caption: 'MINISO Paro Store',
   },
   {
-    src: MINISO_STORE3,
-    alt: 'Miniso Store Interior',
-    caption: 'Interior Display at Miniso Thimphu',
-  },
-  {
-    src: MINISO_STORE4,
-    alt: 'Miniso Store Interior',
-    caption: 'Product Section at Miniso Phuentsholing',
+    src: MINISO_STORE5,
+    alt: 'MINISO Thimphu Store Front',
+    caption: 'MINISO Thimphu Store',
   },
   {
     src: MINISO_PRODUCT1,
-    alt: 'Miniso Products',
-    caption: 'Popular Miniso Product Lines',
+    alt: 'MINISO Product Collection',
+    caption: 'Lifestyle Product Collection',
+  },
+  {
+    src: MINISO_STORE4,
+    alt: 'MINISO Plush Toys Section',
+    caption: 'Plush Toys Theme Section',
+  },
+  {
+    src: MINISO_PRODUCT3,
+    alt: 'MINISO Product Display',
+    caption: 'Premium Product Showcase',
   },
   {
     src: MINISO_PRODUCT2,
-    alt: 'Miniso Products',
-    caption: 'Seasonal Collections at Miniso',
+    alt: 'MINISO IP Products',
+    caption: 'Licensed IP Collections',
   },
 ];
 
 const storeLocations = [
   {
     city: 'Thimphu',
-    address: 'Norzin Lam, City Center',
-    hours: '10:00 AM - 8:00 PM',
-    phone: '+975 1234 5678',
+    address: 'Norzin Lam (New Store)',
+    hours: '10:00 AM - 8:30 PM',
+    phone: '+975 77454705',
   },
   {
     city: 'Thimphu',
-    address: 'Centenary Farmers Market Area',
-    hours: '10:00 AM - 8:00 PM',
-    phone: '+975 1234 5679',
+    address: 'City Center (Old Store)',
+    hours: '10:00 AM - 8:30 PM',
+    phone: '+975 77454705',
   },
   {
     city: 'Paro',
     address: 'Main Market Area',
-    hours: '10:00 AM - 8:00 PM',
-    phone: '+975 1234 5680',
+    hours: '10:00 AM - 8:30 PM',
+    phone: '+975 77454705',
   },
   {
     city: 'Phuentsholing',
     address: 'Near Main Gate',
-    hours: '10:00 AM - 8:00 PM',
-    phone: '+975 1234 5681',
+    hours: '10:00 AM - 8:30 PM',
+    phone: '+975 77454705',
   },
   {
     city: 'Gelephu',
     address: 'Central Market',
-    hours: '10:00 AM - 7:00 PM',
-    phone: '+975 1234 5682',
-  },
-  {
-    city: 'Wangduephodrang',
-    address: 'New Town Area',
-    hours: '10:00 AM - 7:00 PM',
-    phone: '+975 1234 5683',
+    hours: '10:00 AM - 8:30 PM',
+    phone: '+975 17331804',
   },
   {
     city: 'Mongar',
     address: 'Main Street',
-    hours: '10:00 AM - 7:00 PM',
-    phone: '+975 1234 5684',
+    hours: '10:00 AM - 9:00 PM',
+    phone: '+975 17629377',
+  },
+  {
+    city: 'Wangduephodrang',
+    address: 'New Town Area',
+    hours: '10:00 AM - 9:00 PM',
+    phone: '+975 77280011',
   },
 ];
 
@@ -123,8 +125,8 @@ export default function MinisoPage() {
           
           <div className="relative h-[400px] rounded-lg overflow-hidden shadow-xl">
             <Image
-              src={MINISO_STORE1}
-              alt="Miniso Store Front"
+              src={MINISO_PRODUCT4}
+              alt="MINISO Store Interior Display"
               fill
               className="object-cover"
             />
