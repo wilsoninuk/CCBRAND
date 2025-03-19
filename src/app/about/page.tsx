@@ -18,7 +18,7 @@ export default function AboutPage() {
     <>
       {/* Company Overview */}
       <Section backgroundColor="white" paddingY="md">
-        <div className="max-w-5xl mx-auto">
+        <div className="max-w-5xl mx-auto mt-20">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div className="max-w-xl">
               <h1 className="text-2xl md:text-3xl font-bold text-[#1A365D] mb-4">Our Entrepreneurial Story</h1>
