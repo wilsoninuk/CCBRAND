@@ -24,7 +24,7 @@ export default function AboutPage() {
               <h1 className="text-2xl md:text-3xl font-bold text-[#1A365D] mb-4">Our Entrepreneurial Story</h1>
               <div className="h-0.5 w-20 bg-[#D4AF37] mb-6"></div>
               <p className="text-base md:text-lg text-gray-700 mb-4">
-                25 years ago, Kencho Wangdi and Tshering Bidha embarked on their entrepreneurial journey with their first store in Bhutan, importing daily necessities and beauty products from Thailand.
+                17 years ago, Kencho Wangdi and Tshering Bidha embarked on their entrepreneurial journey with their first store in Bhutan, importing daily necessities and beauty products from Thailand.
               </p>
               <p className="text-base md:text-lg text-gray-700 mb-4">
                 What began as a modest venture has grown into a robust retail and distribution network spanning the country. Today, our family-owned businesses, led by CC Brand Bhutan, reflect our dedication to quality, innovation, and market expansion.
@@ -96,25 +96,25 @@ export default function AboutPage() {
             <div className="flex flex-col md:flex-row items-center">
               <div className="md:w-1/2 md:pr-12 md:text-right">
                 <div className="bg-white p-6 rounded-lg shadow-lg inline-block">
-                  <h3 className="text-2xl font-bold text-[#1A365D]">1998</h3>
-                  <h4 className="text-xl font-semibold text-[#1A365D] mb-3">First Store Opening</h4>
+                  <h3 className="text-2xl font-bold text-[#1A365D]">2008</h3>
+                  <h4 className="text-xl font-semibold text-[#1A365D] mb-3">Supermarket Launch</h4>
                   <p className="text-gray-700">
-                    Opened our first retail store in Bhutan, importing daily necessities and beauty products from Thailand.
+                    Started our retail journey by opening our first supermarket in Thimphu, offering a wide range of imported and local products.
                   </p>
                 </div>
               </div>
               <div className="md:w-1/2"></div>
             </div>
             
-            {/* Expansion */}
+            {/* Cosmetics Store */}
             <div className="flex flex-col md:flex-row items-center">
               <div className="md:w-1/2"></div>
               <div className="md:w-1/2 md:pl-12">
                 <div className="bg-white p-6 rounded-lg shadow-lg inline-block">
-                  <h3 className="text-2xl font-bold text-[#1A365D]">2005</h3>
-                  <h4 className="text-xl font-semibold text-[#1A365D] mb-3">Supermarket Launch</h4>
+                  <h3 className="text-2xl font-bold text-[#1A365D]">2015</h3>
+                  <h4 className="text-xl font-semibold text-[#1A365D] mb-3">Cosmetics Store</h4>
                   <p className="text-gray-700">
-                    Expanded our business by opening our first supermarket in Thimphu, offering a wider range of imported and local products.
+                    Expanded into beauty retail with our first cosmetics store, bringing international beauty brands to Bhutan.
                   </p>
                 </div>
               </div>
@@ -124,8 +124,8 @@ export default function AboutPage() {
             <div className="flex flex-col md:flex-row items-center">
               <div className="md:w-1/2 md:pr-12 md:text-right">
                 <div className="bg-white p-6 rounded-lg shadow-lg inline-block">
-                  <h3 className="text-2xl font-bold text-[#1A365D]">2015</h3>
-                  <h4 className="text-xl font-semibold text-[#1A365D] mb-3">Miniso Franchise</h4>
+                  <h3 className="text-2xl font-bold text-[#1A365D]">2019</h3>
+                  <h4 className="text-xl font-semibold text-[#1A365D] mb-3">First Miniso Store</h4>
                   <p className="text-gray-700">
                     Secured the Master Franchise for Miniso in Bhutan and opened our first Miniso store in Thimphu.
                   </p>
@@ -134,46 +134,32 @@ export default function AboutPage() {
               <div className="md:w-1/2"></div>
             </div>
             
-            {/* Focallure */}
+            {/* CC Brand */}
             <div className="flex flex-col md:flex-row items-center">
               <div className="md:w-1/2"></div>
               <div className="md:w-1/2 md:pl-12">
                 <div className="bg-white p-6 rounded-lg shadow-lg inline-block">
-                  <h3 className="text-2xl font-bold text-[#1A365D]">2018</h3>
-                  <h4 className="text-xl font-semibold text-[#1A365D] mb-3">Focallure Beauty Stores</h4>
+                  <h3 className="text-2xl font-bold text-[#1A365D]">2022</h3>
+                  <h4 className="text-xl font-semibold text-[#1A365D] mb-3">CC Brand Establishment</h4>
                   <p className="text-gray-700">
-                    Introduced Focallure Beauty brand to Bhutan with the opening of our first beauty store in Thimphu.
+                    Established CC Brand as our corporate identity, consolidating our various retail operations under one banner.
                   </p>
                 </div>
               </div>
-            </div>
-            
-            {/* Creamnest */}
-            <div className="flex flex-col md:flex-row items-center">
-              <div className="md:w-1/2 md:pr-12 md:text-right">
-                <div className="bg-white p-6 rounded-lg shadow-lg inline-block">
-                  <h3 className="text-2xl font-bold text-[#1A365D]">2020</h3>
-                  <h4 className="text-xl font-semibold text-[#1A365D] mb-3">Creamnest Distribution</h4>
-                  <p className="text-gray-700">
-                    Became the exclusive distributor for Creamnest Milk Tea Powder, expanding our distribution network nationwide.
-                  </p>
-                </div>
-              </div>
-              <div className="md:w-1/2"></div>
             </div>
             
             {/* Present */}
             <div className="flex flex-col md:flex-row items-center">
-              <div className="md:w-1/2"></div>
-              <div className="md:w-1/2 md:pl-12">
+              <div className="md:w-1/2 md:pr-12 md:text-right">
                 <div className="bg-[#D4AF37] p-6 rounded-lg shadow-lg inline-block">
-                  <h3 className="text-2xl font-bold text-white">Today</h3>
-                  <h4 className="text-xl font-semibold text-white mb-3">CC BHUTAN</h4>
+                  <h3 className="text-2xl font-bold text-white">2024</h3>
+                  <h4 className="text-xl font-semibold text-white mb-3">Creamnest Launch</h4>
                   <p className="text-white">
-                    Operating 7 Miniso stores, 3 Focallure beauty stores, and a nationwide distribution network for Creamnest products.
+                    Operating 7 Miniso stores, 3 Focallure beauty stores, and launching nationwide distribution for Creamnest products.
                   </p>
                 </div>
               </div>
+              <div className="md:w-1/2"></div>
             </div>
           </div>
         </div>

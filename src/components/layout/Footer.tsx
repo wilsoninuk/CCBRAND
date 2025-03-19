@@ -16,11 +16,11 @@ export default function Footer() {
           {/* Company Info */}
           <div>
             <h3 className="text-2xl font-bold mb-6 flex items-center">
-              CC BHUTAN
+              SHAGYAL ENTERPRISES
               <span className="ml-2 h-1 w-6 bg-[#D4AF37] inline-block"></span>
             </h3>
             <p className="mb-6 text-gray-300 leading-relaxed">
-              25 years of excellence in retail and distribution across Bhutan. Leading the market with innovation and quality service.
+              17 years of excellence in retail and distribution across Bhutan. Leading the market with innovation and quality service.
             </p>
             <div className="flex space-x-4">
               <a href="https://instagram.com" className="text-gray-300 hover:text-[#D4AF37] transition-colors duration-300" aria-label="Instagram">
@@ -107,7 +107,7 @@ export default function Footer() {
         
         {/* Bottom line */}
         <div className="border-t border-gray-700/50 mt-12 pt-8 text-center text-gray-400">
-          <p>&copy; {currentYear} CC BHUTAN. All rights reserved.</p>
+          <p>&copy; {currentYear} SHAGYAL ENTERPRISES. All rights reserved.</p>
           <p className="mt-2 text-sm">
             Family-owned businesses led by Kencho Wangdi and Tshering.
           </p>

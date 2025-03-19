@@ -54,7 +54,7 @@ export default function Navbar() {
         <Link href="/" className="relative z-[9999] group">
           <div className="flex items-center">
             <h1 className="font-bold text-xl md:text-2xl text-[#1A365D] transition-all duration-300 tracking-wide">
-              CC BHUTAN
+              SHAGYAL ENTERPRISES
             </h1>
             <motion.div 
               className="h-[2px] bg-[#D4AF37] w-0 group-hover:w-8 ml-2 transition-all duration-300"

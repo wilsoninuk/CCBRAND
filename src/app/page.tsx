@@ -8,8 +8,8 @@ import Image from 'next/image';
 const content = {
   en: {
     hero: {
-      title: "CC BHUTAN",
-      subtitle: "25 Years of Excellence in Retail & Distribution Across Bhutan"
+      title: "SHAGYAL ENTERPRISES",
+      subtitle: "17 Years of Excellence in Retail & Distribution Across Bhutan"
     },
     brands: {
       title: "Our Brands",
@@ -31,14 +31,14 @@ const content = {
     },
     about: {
       title: "Our Entrepreneurial Journey",
-      paragraph1: "25 years ago, Kencho Wangdi and Tshering embarked on their entrepreneurial journey with their first store in Bhutan, importing daily necessities and beauty products from Thailand.",
+      paragraph1: "17 years ago, Kencho Wangdi and Tshering embarked on their entrepreneurial journey with their first store in Bhutan, importing daily necessities and beauty products from Thailand.",
       paragraph2: "What began as a modest venture has grown into a robust retail and distribution network spanning the country. Today, our family-owned businesses reflect our dedication to quality, innovation, and market expansion.",
       cta: "Read Our Story"
     },
     stats: {
       title: "Our Success in Numbers",
       items: [
-        { value: "25+", label: "Years of Experience" },
+        { value: "17+", label: "Years of Experience" },
         { value: "10", label: "Retail Locations" },
         { value: "100+", label: "Employees" },
         { value: "$10M+", label: "Annual Turnover" }
@@ -46,14 +46,14 @@ const content = {
     },
     cta: {
       title: "Join Our Growing Team",
-      description: "Be part of Bhutan's leading retail and distribution company. Explore career opportunities with CC BHUTAN.",
+      description: "Be part of Bhutan's leading retail and distribution company. Explore career opportunities with SHAGYAL ENTERPRISES.",
       button: "View Opportunities"
     }
   },
   dz: {
     hero: {
-      title: "སི་སི་འབྲུག་ཡུལ།",
-      subtitle: "འབྲུག་ཡུལ་ནང་བཙོང་ཁང་དང་བགོ་འགྲེམས་ནང་ལུ་ལོ་ངོ་ ༢༥ རིང་གི་རྒྱལ་ཁབ།"
+      title: "ཤ་རྒྱལ་ཨེན་ཊར་པ་རའི་སི་སི།",
+      subtitle: "འབྲུག་ཡུལ་ནང་བཙོང་ཁང་དང་བགོ་འགྲེམས་ནང་ལུ་ལོ་ངོ་ ༡༧ རིང་གི་རྒྱལ་ཁབ།"
     },
     brands: {
       title: "ང་བཅས་ཀྱི་ཚོང་རྟགས་ཚུ།",
@@ -75,14 +75,14 @@ const content = {
     },
     about: {
       title: "ང་བཅས་ཀྱི་ཚོང་ལས་ཀྱི་ལམ་ཡིག",
-      paragraph1: "ལོ་ངོ་ ༢༥ གྱི་ཧེ་མ་ཀེན་ཆོ་དབང་འདུས་དང་ཚེ་རིང་གིས་ཐཱའི་ལེནཌི་ལས་ཉིནམ་རེ་གི་དགོས་མཁོ་དང་མཛེས་ཆས་ཚུ་ནང་འདྲེན་འབད་དེ་ འབྲུག་ཡུལ་ནང་ཁོང་རའི་ཚོང་ཁང་དང་པ་དང་བཅསཔ་སྦེ་ཚོང་ལས་ཀྱི་འགྲུལ་ལམ་འགོ་བཙུགས་ནུག",
+      paragraph1: "ལོ་ངོ་ ༡༧ གྱི་ཧེ་མ་ཀེན་ཆོ་དབང་འདུས་དང་ཚེ་རིང་གིས་ཐཱའི་ལེནཌི་ལས་ཉིནམ་རེ་གི་དགོས་མཁོ་དང་མཛེས་ཆས་ཚུ་ནང་འདྲེན་འབད་དེ་ འབྲུག་ཡུལ་ནང་ཁོང་རའི་ཚོང་ཁང་དང་པ་དང་བཅསཔ་སྦེ་ཚོང་ལས་ཀྱི་འགྲུལ་ལམ་འགོ་བཙུགས་ནུག",
       paragraph2: "ག་ཅི་འབད་རུང་ཚད་ལས་མེད་པའི་ལས་འགུལ་ཅིག་གིས་འགོ་བཙུགས་ཡོད་མི་དེ་ ད་ལྟོ་རྒྱལ་ཁབ་ཀྱི་ས་ཁྱབ་ཡོད་པའི་ཚོང་འབྲེལ་དང་བགོ་འགྲེམས་ཡོངས་འབྲེལ་སྦོམ་ཅིག་ལུ་འགྱུར་སོང་ནུག དེ་རིང་ ང་བཅས་ཀྱི་བཟའ་ཚང་གིས་བདག་དབང་འབད་ཡོད་པའི་ཚོང་ལས་ཚུ་གིས་སྤུས་ཚད་ གསར་གཏོད་ དང་ཁྲོམ་ཁར་རྒྱ་སྐྱེད་གཏང་ནི་ལུ་ང་བཅས་ཀྱི་གཅིག་སྒྲིལ་སྟོནམ་ཨིན།",
       cta: "ང་བཅས་ཀྱི་ལོ་རྒྱུས་ལྷག།"
     },
     stats: {
       title: "ཨང་གྲངས་ནང་ང་བཅས་ཀྱི་གྲུབ་འབྲས།",
       items: [
-        { value: "༢༥+", label: "ཉམས་མྱོང་གི་ལོ་གྲངས།" },
+        { value: "༡༧+", label: "ཉམས་མྱོང་གི་ལོ་གྲངས།" },
         { value: "༡༠", label: "ཚོང་ཁང་གི་ས་གནས།" },
         { value: "༡༠༠+", label: "ལས་གཡོག་པ།" },
         { value: "$༡༠M+", label: "ལོ་བསྟར་སྒོར་བཞུ།" }
@@ -90,7 +90,7 @@ const content = {
     },
     cta: {
       title: "ང་བཅས་ཀྱི་སྐྱེདཔ་སྦེ་ཡོད་པའི་ཚོགས་པ་དང་མཉམ་འབྲེལ་འབད།",
-      description: "འབྲུག་ཡུལ་གྱི་མདུན་ཕྱོགས་ལུ་ཡོད་པའི་བཙོང་ཁང་དང་བགོ་འགྲེམས་ཀཱམ་པ་ནི་གྱི་ཆ་ཤས་ཅིག་འབད། སི་སི་འབྲུག་ཡུལ་དང་མཉམ་འབྲེལ་ཐོག་ལས་ཁྱད་རིག་གི་གོ་སྐབས་ཚུ་འཚོལ།",
+      description: "འབྲུག་ཡུལ་གྱི་མདུན་ཕྱོགས་ལུ་ཡོད་པའི་བཙོང་ཁང་དང་བགོ་འགྲེམས་ཀཱམ་པ་ནི་གྱི་ཆ་ཤས་ཅིག་འབད། ཤ་རྒྱལ་ཨེན་ཊར་པ་རའི་སི་སི་དང་མཉམ་འབྲེལ་ཐོག་ལས་ཁྱད་རིག་གི་གོ་སྐབས་ཚུ་འཚོལ།",
       button: "གོ་སྐབས་ཚུ་བལྟ།"
     }
   }
@@ -226,12 +226,14 @@ export default function Home() {
             </div>
             <div>
               <h2 className="text-4xl font-bold text-[#1A365D] mb-6">{t.about.title}</h2>
-              <p className="text-lg text-gray-700 mb-6">
-                {t.about.paragraph1}
+              <p className="text-base md:text-lg text-gray-600 mb-6">
+                With 17 years of experience in retail and distribution, we have established ourselves as a trusted partner for international brands entering the Bhutanese market.
               </p>
-              <p className="text-lg text-gray-700 mb-8">
-                {t.about.paragraph2}
-              </p>
+              <div className="text-base md:text-lg text-gray-600 mb-6">
+                <p className="mb-4">
+                  Since 2008, we have been at the forefront of bringing international brands to Bhutan. Our journey began with a single supermarket, and today we operate multiple retail stores across the country.
+                </p>
+              </div>
               <a 
                 href="/about"
                 className="inline-block bg-[#1A365D] hover:bg-[#2A4E84] text-white font-bold py-3 px-8 rounded-md transition-colors duration-300"

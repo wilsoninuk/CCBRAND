@@ -8,8 +8,8 @@ import Footer from '@/components/layout/Footer';
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "CC BHUTAN - Leading Retail & Distribution Company in Bhutan",
-  description: "CC BHUTAN is a leading retail and distribution company in Bhutan with 25 years of excellence.",
+  title: "Shagyal Enterprises - Leading Retail & Distribution Company in Bhutan",
+  description: "Shagyal Enterprises is a leading retail and distribution company in Bhutan with 25 years of excellence.",
 };
 
 export default function RootLayout({

@@ -1,10 +1,10 @@
-# CC BHUTAN Corporate Website
+# Shagyal Enterprises Corporate Website
 
-A modern, responsive corporate website for CC BHUTAN, showcasing the company's 25-year history, diverse brand portfolio, and business operations across Bhutan.
+A modern, responsive corporate website for Shagyal Enterprises, showcasing the company's 25-year history, diverse brand portfolio, and business operations across Bhutan.
 
 ## Overview
 
-This corporate website is built for CC BHUTAN, a leading retail and distribution company in Bhutan. The site features:
+This corporate website is built for Shagyal Enterprises, a leading retail and distribution company in Bhutan. The site features:
 - Company overview and history
 - Showcase of 4 major brands (Miniso, Focallure, Supermarkets, and Creamnest)
 - Interactive image galleries of stores and products
@@ -31,7 +31,7 @@ This corporate website is built for CC BHUTAN, a leading retail and distribution
 ## Project Structure
 
 ```
-cc-bhutan/
+shagyal-enterprises/
 ├── public/             # Public assets (images, etc.)
 ├── src/
 │   ├── app/            # Next.js 14 App Router
@@ -67,8 +67,8 @@ cc-bhutan/
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/cc-bhutan.git
-   cd cc-bhutan
+   git clone https://github.com/your-username/shagyal-enterprises.git
+   cd shagyal-enterprises
    ```
 
 2. Install dependencies:
@@ -114,7 +114,7 @@ Update content in the page files to reflect accurate company information:
 
 ## License
 
-This project is proprietary and belongs to CC BHUTAN.
+This project is proprietary and belongs to Shagyal Enterprises.
 
 ## Acknowledgements
 

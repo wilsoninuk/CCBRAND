@@ -12,8 +12,8 @@ const TEAM_IMAGE = '/images/join-us/team.jpg';
 const OFFICE_IMAGE = '/images/join-us/office.webp';
 
 export const metadata: Metadata = {
-  title: 'Join Our Team | CC BHUTAN',
-  description: 'Explore career opportunities at CC BHUTAN. Join our growing team and be part of Bhutan\'s leading retail and distribution company.',
+  title: 'Join Our Team | SHAGYAL ENTERPRISES',
+  description: 'Explore career opportunities at SHAGYAL ENTERPRISES. Join our growing team and be part of Bhutan\'s leading retail and distribution company.',
 };
 
 const benefits = [
@@ -72,10 +72,10 @@ export default function JoinUsPage() {
             <h1 className="text-2xl md:text-3xl font-bold text-[#1A365D] mb-4">Join Our Team</h1>
             <div className="h-1 w-20 bg-[#D4AF37] mb-6"></div>
             <p className="text-base text-gray-700 mb-4">
-              At CC BHUTAN, we believe in nurturing talent and providing opportunities for growth. Join our dynamic team and be part of Bhutan's leading retail and distribution company.
+              At SHAGYAL ENTERPRISES, we believe in nurturing talent and providing opportunities for growth. Join our dynamic team and be part of Bhutan's leading retail and distribution company.
             </p>
             <p className="text-base text-gray-700 mb-6">
-              With over 25 years of experience in the industry, we offer a collaborative work environment where innovation is encouraged and excellence is rewarded.
+              With 17 years of experience in the industry, we offer a collaborative work environment where innovation is encouraged and excellence is rewarded.
             </p>
             <div className="grid grid-cols-2 gap-4 mt-6">
               <div className="flex items-center space-x-4">
@@ -120,7 +120,7 @@ export default function JoinUsPage() {
           <div className="relative h-[400px] rounded-lg overflow-hidden shadow-xl">
             <Image
               src={TEAM_IMAGE}
-              alt="CC BHUTAN Team"
+              alt="SHAGYAL ENTERPRISES Team"
               fill
               className="object-cover"
             />
@@ -132,7 +132,7 @@ export default function JoinUsPage() {
       <Section backgroundColor="white" paddingY="md">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
-            <h2 className="text-2xl md:text-3xl font-bold text-[#1A365D] mb-4">Life at CC BHUTAN</h2>
+            <h2 className="text-2xl md:text-3xl font-bold text-[#1A365D] mb-4">Life at SHAGYAL ENTERPRISES</h2>
             <div className="h-1 w-20 bg-[#D4AF37] mb-6"></div>
             <div className="space-y-4">
               <div className="flex items-start space-x-4">
@@ -182,7 +182,7 @@ export default function JoinUsPage() {
           <div className="relative h-[400px] rounded-lg overflow-hidden shadow-xl">
             <Image
               src={CULTURE_IMAGE}
-              alt="Life at CC BHUTAN"
+              alt="Life at SHAGYAL ENTERPRISES"
               fill
               className="object-cover"
             />
@@ -195,7 +195,7 @@ export default function JoinUsPage() {
         <div className="text-center mb-10">
           <h2 className="text-2xl md:text-3xl font-bold text-[#1A365D] mb-3">Why Work With Us</h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            The benefits of building your career with CC BHUTAN
+            The benefits of building your career with SHAGYAL ENTERPRISES
           </p>
           <div className="h-1 w-20 bg-[#D4AF37] mx-auto mt-3"></div>
         </div>
@@ -256,7 +256,7 @@ export default function JoinUsPage() {
             <div className="relative h-[400px] rounded-lg overflow-hidden shadow-xl">
               <Image
                 src={OFFICE_IMAGE}
-                alt="Career Growth at CC BHUTAN"
+                alt="Career Growth at SHAGYAL ENTERPRISES"
                 fill
                 className="object-cover"
               />
