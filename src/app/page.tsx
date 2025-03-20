@@ -182,7 +182,7 @@ export default function Home() {
               return (
                 <div 
                   key={index}
-                  className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 h-64"
+                  className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 h-[280px] md:h-64"
                 >
                   <div className="relative w-full h-full">
                     <Image
@@ -192,17 +192,17 @@ export default function Home() {
                       className="object-cover"
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 400px"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-black/30"></div>
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-black/20"></div>
                   </div>
-                  <div className="absolute inset-0 z-10 flex flex-col justify-end p-6 text-white">
-                    <h3 className="text-2xl font-bold mb-2">{brand.title}</h3>
-                    <p className="text-sm text-gray-300 mb-4 opacity-90">{brand.description}</p>
+                  <div className="absolute inset-0 z-10 flex flex-col justify-end p-4 md:p-6 text-white">
+                    <h3 className="text-xl md:text-2xl font-bold mb-1 md:mb-2">{brand.title}</h3>
+                    <p className="text-xs md:text-sm text-gray-300 mb-3 md:mb-4 opacity-90 line-clamp-2">{brand.description}</p>
                     <a 
-                      href={`/brands/${brand.title.toLowerCase().replace(/\s+/g, '-')}`} 
-                      className="inline-flex items-center text-sm text-white hover:text-[#D4AF37] transition-colors duration-300"
+                      href={index === 0 ? '/brands/miniso' : index === 1 ? '/brands/focallure' : '/brands/creamnest'}
+                      className="inline-flex items-center text-xs md:text-sm text-white hover:text-[#D4AF37] transition-colors duration-300"
                     >
                       <span>{language === 'en' ? 'Explore' : 'བལྟ་ནི།'}</span>
-                      <span className="ml-1 h-[1px] w-5 bg-[#D4AF37] inline-block"></span>
+                      <span className="ml-1 h-[1px] w-4 md:w-5 bg-[#D4AF37] inline-block"></span>
                     </a>
                   </div>
                 </div>

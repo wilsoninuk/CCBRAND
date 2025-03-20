@@ -8,7 +8,6 @@ import { Metadata } from 'next';
 const brandLinks = [
   { href: '/brands/miniso', label: 'Miniso', count: '7 Stores' },
   { href: '/brands/focallure', label: 'Focallure', count: '3 Stores' },
-  { href: '/brands/supermarket', label: 'Supermarkets', count: '3 Locations' },
   { href: '/brands/creamnest', label: 'Creamnest', count: 'Distribution' },
 ];
 
